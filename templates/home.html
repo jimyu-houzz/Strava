@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Welcome to Home Page!</title>
+    </head>
+    <body>
+        <button type="button" onClick="redirectToStrava()">Click Me To Authorize Strava!</button>
+
+        <script>
+            function redirectToStrava(){
+                location.href = 'https://www.strava.com/oauth/authorize?client_id=77442&response_type=code&redirect_uri=http://localhost:5001/strava_oauth&approval_prompt=force'
+            }
+        </script>
+    </body>
+</html>
